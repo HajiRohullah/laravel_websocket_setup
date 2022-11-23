@@ -51,7 +51,6 @@
           wsPort: 6001,
           wssPort: 6001,
      });
-
      var channel = pusher.subscribe('events');
      channel.bind('App\\Events\\RealTimeMessage', (d) => {
           if (d.msg == null || d.msg == "") {
